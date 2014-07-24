@@ -21,5 +21,8 @@
     "karma-requireglobal-preprocessor": "0.0.0",
     "karma-requirejs": "^0.2.1",
     "requirejs": "^2.1.11"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }
