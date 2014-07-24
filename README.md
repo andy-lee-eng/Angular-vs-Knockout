@@ -19,6 +19,9 @@ You can also click through view details of each investment or view the about pag
 
 Html, javascript and css is packaged up and minified for the app home screen, while navigating to additional screens triggers a request for the additional content.
 
+Both apps have a mocked back end, so that they behave as though they're making ajax requests without actually needing a server to respond to those requests.
+
+
 ###Installation:
 
 From both the AngularFrontEnd and KnockoutFrontEnd folders:
