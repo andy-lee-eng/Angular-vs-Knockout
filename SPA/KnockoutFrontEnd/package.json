@@ -6,7 +6,7 @@
     "combined-stream": "0.0.5",
     "deeply": "~0.1.0",
     "event-stream": "~3.1.0",
-    "gulp": "~3.6.2",
+    "gulp": "^3.8.6",
     "gulp-clean": "~0.2.4",
     "gulp-concat": "~2.2.0",
     "gulp-html-replace": "~1.0.0",

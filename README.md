@@ -9,9 +9,15 @@ The Angular version was built up from the angular-seed project, which is here: h
 The Knockout version was scaffolded using yeoman, and includes CrossroadsJS and RequireJS.
 
 A live demo of both apps is available here:
+
 [Knockout Version](https://rawgit.com/DevAndyLee/Angular-vs-Knockout/master/Dist/Knockout/index.html)
+
 [Angular Version](https://rawgit.com/DevAndyLee/Angular-vs-Knockout/master/Dist/Angular/index.html)
 
+The app presents a list of investments in a portfolio, and lets you filter them by name while dynamically updating all the components.
+You can also click through view details of each investment or view the about page, all within the same SPA.
+
+Html, javascript and css is packaged up and minified for the app home screen, while navigating to additional screens triggers a request for the additional content.
 
 ###Installation:
 
