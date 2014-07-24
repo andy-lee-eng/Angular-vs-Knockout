@@ -1,0 +1,12 @@
+﻿<div class="filter-form">
+    <form role="form">
+        <div class="form-group">
+            <label class="sr-only" for="investmentFilter">Filter investments</label>
+            <div class="input-group">
+                <input type="search" class="form-control" id="investmentFilter" placeholder="Filter Investments"
+                       ng-model="search.name" ng-model-options="{debounce: { default: 500, blur: 0 }}">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+            </div>
+        </div>
+    </form>
+</div>

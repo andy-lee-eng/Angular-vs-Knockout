@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="testSPA" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="testSPA" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="testSPA" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="testSPA" class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test SPA Angular</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- endbuild -->
+</head>
+<body>
+    <nav-bar></nav-bar>
+
+    <div id="page">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div ng-view></div>
+    </div>
+
+
+    <!-- build:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/globalize/lib/globalize.js"></script>
+    <script src="bower_components/globalize/lib/cultures/globalize.culture.en-GB.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/jquery-mockjax/jquery.mockjax.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/investments-component.js"></script>
+    <script src="js/sector-component.js"></script>
+    <script src="js/transactions-component.js"></script>
+    <script src="js/investment-filter.js"></script>
+    <script src="js/investment-page.js"></script>
+
+    <script src="charts/svg-bar-chart.js"></script>
+    <script src="charts/svg-column-chart.js"></script>
+
+    <!-- mock server -->
+    <script src="mock_server/mock-server.js"></script>
+    <script src="mock_server/mock-server-stub.js"></script>
+    <!-- end mock server -->
+
+    <!-- endbuild -->
+
+</body>
+</html>

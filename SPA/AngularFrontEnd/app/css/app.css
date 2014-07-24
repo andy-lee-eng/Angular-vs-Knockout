@@ -1,0 +1,81 @@
+body {
+    background-color: #E0E0E0;
+}
+
+#page {
+	margin: 80px 15px 0 15px;
+}
+
+.panel {
+    background-color: #fff;
+    padding: 9px;
+}
+
+.panel h2, .panel h3 {
+    margin: 0;
+}
+
+.investments {
+    height: 520px;
+    overflow-y: auto;
+}
+
+.investments .table td:not(:first-child), .investments .table th:not(:first-child) {
+    text-align: right;
+}
+
+.filter-form {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    z-index: 1040;
+}
+
+.table-hover tbody tr {
+    cursor: pointer;
+}
+
+.transactions-chart{
+    height: 250px;
+}
+
+.chart .axis line, .chart .axis path {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #505050;
+    shape-rendering: crispEdges;
+}
+
+.chart .y-axis line, .chart .y-axis path {
+    visibility: hidden;
+    stroke: none;
+}
+
+.chart .bar, .chart .column {
+    shape-rendering: crispEdges;
+    stroke: none;
+}
+.chart .bar.series-0 {
+    fill: #a94442;
+}
+.chart .bar.series-1 {
+    fill: #3c763d;
+}
+
+.chart .column.invested {
+    fill: #a94442;
+}
+.chart .column.returned {
+    fill: #3c763d;
+}
+.chart .column.valuation {
+    fill: #31708f;
+}
+
+@media (max-width: 768px) {
+    .filter-form {
+        right: 64px;
+    }
+}

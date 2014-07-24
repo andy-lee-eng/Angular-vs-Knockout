@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="panel investment-page">
+        <div class="panel-heading">
+            <h2 data-bind='text: name'>Investment</h2>
+        </div>
+        <div class="panel-body container-fluid">
+            <p class="row">
+                <div class="col-md-6">
+                    <h4>Details</h4>
+                    <dl>
+                        <dt>Status</dt>
+                        <dd data-bind="text: (open() ? 'Open' : 'Closed'), css: { 'text-success': open(), 'text-danger': !open() }"></dd>
+                        <dt>Sector</dt>
+                        <dd data-bind="text: sector"></dd>
+                        <dt>Return on Investment</dt>
+                        <dd data-bind="percent: returnOnInvestment"></dd>
+                    </dl>
+                </div>
+            </p>
+            <p class="row">
+                <div class="col-md-6">
+                    <h4>Transactions</h4>
+                    <table class="table">
+                        <tbody data-bind="foreach: transactions">
+                            <tr data-bind="css: { 'bg-success': !valuation && amount < 0, 'bg-danger': amount > 0, 'bg-info': valuation }">
+                                <td data-bind="date: date"></td>
+                                <td data-bind="currency: amount"></td>
+                                <td data-bind="text: (valuation ? 'Valuation' : '')"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="transactions-chart" data-bind="columnChart: transactions, chartOptions: chartOptions"></div>
+                </div>
+            </p>
+        </div>
+    </div>
+</div>

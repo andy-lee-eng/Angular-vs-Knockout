@@ -1,0 +1,29 @@
+﻿<div class="panel">
+    <div class="panel-heading">
+        <h3>Investments</h3>
+    </div>
+    <div class="panel-body investments table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Investment Date</th>
+                    <th>Holding Period</th>
+                    <th>Invested</th>
+                    <th>Return</th>
+                    <th>Return %</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: investments">
+                <tr data-bind="click: $parent.showInvestment">
+                    <td data-bind="text: name"></td>
+                    <td data-bind="date: startDate"></td>
+                    <td data-bind="duration: holdingPeriod"></td>
+                    <td data-bind="currency: investedAmount"></td>
+                    <td data-bind="currency: returnAmount"></td>
+                    <td data-bind="percent: returnOnInvestment"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

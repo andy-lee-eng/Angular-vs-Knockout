@@ -1,0 +1,29 @@
+﻿<div class="panel">
+    <div class="panel-heading">
+        <h3>Investments</h3>
+    </div>
+    <div class="panel-body investments table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Investment Date</th>
+                    <th>Holding Period</th>
+                    <th>Invested</th>
+                    <th>Return</th>
+                    <th>Return %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="investment in investments" ng-click="showInvestment()">
+                    <td>{{investment.name}}</td>
+                    <td>{{investment.startDate | customDate}}</td>
+                    <td>{{investment.holdingPeriod | duration}}</td>
+                    <td>{{investment.investedAmount | customCurrency}}</td>
+                    <td>{{investment.returnAmount | customCurrency}}</td>
+                    <td>{{investment.returnOnInvestment | percent}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
