@@ -8,6 +8,9 @@ The Angular version was built up from the angular-seed project, which is here: h
 
 The Knockout version was scaffolded using yeoman, and includes CrossroadsJS and RequireJS.
 
+A live demo of both apps is available here:
+[a relative link](Dist/Knockout/Index.html)
+
 
 ###Installation:
 
