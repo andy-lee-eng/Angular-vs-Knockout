@@ -3,12 +3,17 @@ Angular-vs-Knockout
 
 An implementation of the same SPA in both AngularJS and KnockoutJS (with CrossroadsJS and RequireJS)
 
+###Introduction
+The Angular version was built up from the angular-seed project, which is here: https://github.com/angular/angular-seed
+
+The Knockout version was scaffolded using yeoman, and includes CrossroadsJS and RequireJS.
+
+
 ###Installation:
 
 From both the AngularFrontEnd and KnockoutFrontEnd folders:
 ```
 npm install
-```
 ```
 
 ###Start the web servers:
