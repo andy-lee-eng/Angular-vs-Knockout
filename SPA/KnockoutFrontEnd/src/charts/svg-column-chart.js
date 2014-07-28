@@ -56,7 +56,7 @@
 
             positionChartElements(axesDuration);
 
-            if (data.length > 0) {
+            if (!firstRender || data.length > 0) {
                 drawAxes(axesDuration);
                 drawColumns(renderDuration);
 

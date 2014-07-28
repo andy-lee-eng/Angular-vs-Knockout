@@ -51,7 +51,7 @@
 
             positionChartElements(axesDuration);
 
-            if (data.length > 0) {
+            if (!firstRender || data.length > 0) {
                 drawAxes(axesDuration);
                 drawBars(renderDuration);
 
@@ -117,6 +117,10 @@
 
         var positionChartElements = function positionChartElements(renderDuration) {
             measureChartSize();
+
+            containerElement
+                .transition().duration(renderDuration)
+                .style('height', chartSize.height + "px");
 
             svgElement
                 .style('width', chartSize.width)
