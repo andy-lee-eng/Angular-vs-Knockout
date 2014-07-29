@@ -118,14 +118,10 @@
         var positionChartElements = function positionChartElements(renderDuration) {
             measureChartSize();
 
-            containerElement
+            svgElement
+                .style('width', chartSize.width + "px")
                 .transition().duration(renderDuration)
                 .style('height', chartSize.height + "px");
-
-            svgElement
-                .style('width', chartSize.width)
-                .transition().duration(renderDuration)
-                .style('height', chartSize.height);
 
             plotElement
                 .transition().duration(renderDuration)

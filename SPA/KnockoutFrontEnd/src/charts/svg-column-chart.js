@@ -116,8 +116,8 @@
             measureChartSize();
 
             svgElement
-                .style('width', chartSize.width)
-                .style('height', chartSize.height);
+                .style('width', chartSize.width + "px")
+                .style('height', chartSize.height + "px");
 
             plotElement
                 .transition().duration(renderDuration)
