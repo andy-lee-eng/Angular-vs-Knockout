@@ -21,7 +21,7 @@
         };
         binding.update = function (element, valueAccessor) {
             // Update the chart data
-            var data = ko.utils.unwrapObservable(valueAccessor());
+            var data = ko.unwrap(valueAccessor());
             $(element).data('chart').setData(data);
         };
 

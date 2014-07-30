@@ -13,7 +13,7 @@ describe('investments-component', function () {
 
     beforeEach(module('testSPA.investmentsComponent'));
 
-    beforeEach(inject(function ($rootScope, $controller, _$httpBackend_, $q) {
+    beforeEach(inject(function ($rootScope, $controller) {
         backEndServer = {
             data: {}, done: false, isDone: function () { return backEndServer.done; },
             analysis: jasmine.createSpy().andCallFake(function (params) {

@@ -16,8 +16,7 @@ angular.module('testSPA.filters', [])
   })
   .filter('customCurrency', function () {
       return function (text) {
-          var result = Globalize.format(text, 'C');
-          return result;
+          return Globalize.format(text, 'C');
       };
   })
   .filter('percent', function () {
