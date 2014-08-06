@@ -3,6 +3,9 @@ Angular-vs-Knockout
 
 An implementation of the same SPA in both AngularJS and KnockoutJS (with CrossroadsJS and RequireJS)
 
+The accompanying blog post is here:
+[Single Page Applications - Angular vs Knockout](http://www.scottlogic.com/blog/2014/07/30/spa-angular-knockout.html)
+
 ###Introduction
 The Angular version was built up from the angular-seed project, which is here: https://github.com/angular/angular-seed
 
@@ -33,8 +36,8 @@ npm install
 
 Use the node http server to host the content locally:
 ```
-call http-server AngularFrontEnd\app –p 8082 -o -c-1
-call http-server KnockoutFrontEnd\src –p 8081 -o -c-1
+call http-server AngularFrontEnd\app â€“p 8082 -o -c-1
+call http-server KnockoutFrontEnd\src â€“p 8081 -o -c-1
 ```
 
 ###Build and optimise:
